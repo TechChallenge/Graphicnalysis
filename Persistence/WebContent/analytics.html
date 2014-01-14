@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Portal Layout Sample</title>
+
+    <link rel="stylesheet" type="text/css" href="lib/examples/portal/portal.css" />
+
+    <!-- GC -->
+
+    <!-- <x-compile> -->
+
+    <!-- <x-bootstrap> -->
+    <script type="text/javascript" src="lib/examples/shared/include-ext.js"></script>
+    <script type="text/javascript" src="lib/examples/shared/options-toolbar.js"></script>
+    <!-- </x-bootstrap> -->
+
+    <!-- shared example code -->
+    <script type="text/javascript" src="lib/examples/shared/examples.js"></script>
+
+    <script type="text/javascript">
+        Ext.Loader.setPath('Ext.app', 'lib/examples/portal/classes');
+    </script>
+    <script type="text/javascript" src="lib/examples/portal/portal.js"></script>
+	<!-- <script type="text/javascript" src="lib/examples/portal/LiveUserData.js"></script> -->
+	
+<script type="text/javascript">
+        Ext.require([
+            'Ext.layout.container.*',
+            'Ext.resizer.Splitter',
+            'Ext.fx.target.Element',
+            'Ext.fx.target.Component',
+            'Ext.window.Window',
+            'Ext.app.Portlet',
+            'Ext.app.PortalColumn',
+            'Ext.app.PortalPanel',
+            'Ext.app.Portlet',
+            'Ext.app.PortalDropZone',
+            'Ext.app.GridPortlet',
+            'Ext.app.ChartPortlet'
+        ]);
+
+        Ext.onReady(function(){
+            Ext.create('Ext.app.Portal');
+        });
+    </script>
+    <!-- </x-compile> -->
+</head>
+<body>
+    <span id="app-msg" style="display:none;"></span>
+</body>
+</html>

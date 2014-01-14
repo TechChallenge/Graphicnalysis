@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>Petabytes</display-name>
+	<servlet>
+		<servlet-name>BUData</servlet-name>
+		<servlet-class>com.heckathon.BUData</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>AvailabelConsumed</display-name>
+		<servlet-name>AvailabelConsumed</servlet-name>
+		<servlet-class>com.heckathon.AvailabelConsumed</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>AssessmentUsage</display-name>
+		<servlet-name>AssessmentUsage</servlet-name>
+		<servlet-class>com.heckathon.AssessmentUsage</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ReportUsage</display-name>
+		<servlet-name>ReportUsage</servlet-name>
+		<servlet-class>com.heckathon.ReportUsage</servlet-class>
+	</servlet>
+ 
+	<servlet-mapping>
+		<servlet-name>BUData</servlet-name>
+		<url-pattern>/BUData</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AvailabelConsumed</servlet-name>
+		<url-pattern>/AvailabelConsumed</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AssessmentUsage</servlet-name>
+		<url-pattern>/AssessmentUsage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ReportUsage</servlet-name>
+		<url-pattern>/ReportUsage</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
